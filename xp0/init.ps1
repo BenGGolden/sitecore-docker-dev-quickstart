@@ -59,9 +59,6 @@ Set-EnvFileVariable "SITECORE_ADMIN_PASSWORD" -Value $SitecoreAdminPassword
 # SQL_SA_PASSWORD
 Set-EnvFileVariable "SQL_SA_PASSWORD" -Value $SqlSaPassword
 
-# CD_HOST
-Set-EnvFileVariable "CD_HOST" -Value "cd.$($HostName).localhost"
-
 # CM_HOST
 Set-EnvFileVariable "CM_HOST" -Value "cm.$($HostName).localhost"
 
@@ -128,7 +125,6 @@ finally {
 
 Write-Host "Adding Windows hosts file entries..." -ForegroundColor Green
 
-Add-HostsEntry "cd.$($HostName).localhost"
 Add-HostsEntry "cm.$($HostName).localhost"
 Add-HostsEntry "id.$($HostName).localhost"
 Add-HostsEntry "hrz.$($HostName).localhost"
