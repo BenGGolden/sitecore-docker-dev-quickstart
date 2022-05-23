@@ -20,7 +20,7 @@ services:
         condition: service_healthy
 
   mssql:
-    mem_limit: 2GB
+    mem_limit: 4GB
     volumes:
       - ${LOCAL_DATA_PATH}\mssql:c:\data
 
