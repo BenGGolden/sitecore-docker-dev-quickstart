@@ -33,9 +33,9 @@ services:
         SPE_IMAGE: ${SITECORE_MODULE_REGISTRY}sitecore-spe-assets:${SPE_VERSION}
         HEADLESS_IMAGE: ${SITECORE_MODULE_REGISTRY}sitecore-headless-services-xp1-assets:${HEADLESS_VERSION}
     environment:
-      POST_DEPLOYMENT_WAIT_PERIOD: ${MSSQL_INIT_STARTUP_TIME}
+      POST_DEPLOYMENT_WAIT_PERIOD: 120
     healthcheck:
-      start_period: ${MSSQL_INIT_STARTUP_TIME}s
+      start_period: 420s
   
   # Mount our Solr data folder
   solr:
