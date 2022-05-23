@@ -9,4 +9,4 @@ FROM ${SPE_IMAGE} as spe
 FROM ${BASE_IMAGE}
 
 COPY --from=spe C:\module\db C:\resources\spe
-COPY --from=headless C:\module\db C:\jss_data
+COPY --from=headless C:\module\db C:\resources\headless
