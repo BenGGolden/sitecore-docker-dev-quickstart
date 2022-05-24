@@ -1,11 +1,11 @@
-# sitecore-docker-dev-env
+# Sitecore Docker Development Quickstart
 
-This repo has sample Sitecore Docker development environment setups that include SXA and Headless Services (f.k.a JSS).
+This repo has sample Sitecore Docker development environment setups that include SXA and Headless Services.
 There is a sample for both a XP0 and XM0 topology. XM0 is not an official topology, but it's just XM1 without the Redis and CD roles.
 These environments are suitable for local learning/playing/hacking or if you just need to spin up an environment quickly.
 The containers support solution file deployment to the running containers via volume mounts and the watch script provided by Sitecore.
 I included the solution build container shown in the Sitecore docker-examples repo, but I commented it out as I don't
-think it's typically needed for the intended use cases. If you do want to use it, a global find-replace of "#SB#" with "" enable it.
+think it's typically needed for the intended use cases. If you do want to use it, just do a global find-replace of "#SB#" with "".
 
 ## Usage
 
