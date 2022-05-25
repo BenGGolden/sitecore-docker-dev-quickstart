@@ -28,3 +28,5 @@ Usage is the same as typical Sitecore Docker examples.
 3. Once the containers are up and running, log into Sitecore and populate the solr schema and rebuild the indexes.
 
 Happy Sitecoring!
+
+Copyright Notice: Portions of the code in this repo were copied from Sitecore's <a href="https://github.com/Sitecore/docker-examples" target="_blank">docker-examples repo</a>. [Their MIT license](Sitecore_MIT_License) is included. Everything else is licensed under [CC0](LICENSE) and I don't care what you do with it or if you attribute me.
