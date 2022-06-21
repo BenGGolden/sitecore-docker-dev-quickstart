@@ -59,6 +59,9 @@ Set-EnvFileVariable "SITECORE_ADMIN_PASSWORD" -Value $SitecoreAdminPassword
 # SQL_SA_PASSWORD
 Set-EnvFileVariable "SQL_SA_PASSWORD" -Value $SqlSaPassword
 
+# COMPOSE_PROJECT_NAME
+Set-EnvFileVariable "COMPOSE_PROJECT_NAME" -Value $HostName
+
 # CM_HOST
 Set-EnvFileVariable "CM_HOST" -Value "cm.$($HostName).localhost"
 
